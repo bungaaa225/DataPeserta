@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORM LOGIN</title>
+  <style>
+    /* Reset style */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+    }
+
+     .navbar {
+         
+        padding: 10px;
+        color: #1b1717;
+        text-align: center;
+
+    }
+
+    .nav-links {
+    list-style: none; /* Menghilangkan bullet */
+    margin: 5px;
+    padding: 5px;
+    display: flex; /* Membuat item sejajar horizontal */
+    justify-content: space-around; /* Memberi jarak antar item */
+    
+
+
+    }
+
+    .nav-links li a {
+    color: rgb(0, 0, 0); /* Mengubah warna teks */
+    text-decoration :none; /* Menghilangkan garis bawah */
+    padding: 50px;
+    text-align: right;
+
+
+    }
+
+
+    body {
+      background: #d1e8ff;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      display: grid;
+      height: 100vh;
+      padding: 100px;
+    }
+
+    .form-container {
+       background-color: #ffffff;
+      padding: 100px;
+      border-radius: 50px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 500px;
+     
+
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #000000;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 500;
+      color: #000000;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #000000;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+
+
+    .btn-submit {
+      width: 100%;
+      padding: 12px;
+      background: #4a90e2;
+      color: #030303;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .btn-submit:hover {
+      background: #357ABD;
+    }
+
+ 
+  </style>
+</head>
+<body>
+      <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="indexLogin.html">Home</a></li>
+            <li><a href="indexLogin.html">Login</a></li>
+            <li><a href="indexPeserta.html">List Peserta</a></li>
+        </ul>
+    </nav>
+    
+
+  <div class="form-container">
+    <h2>FORM LOGIN</h2>
+    <form action="inputLogin.php" method="post">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text"  name="username" id="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required>
+      </div>
+      <button type="submit" class="btn-submit">SigIn</button>
+    
+    </form>
+  </div>
+
+</body>
+</html>
